@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="career-body" onload="loadUser()">
+
+<div class="top-bar">
+    <h3 id="welcomeUser"></h3>
+    <div>
+        <button onclick="toggleMode()">🌙</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="career-container">
+
+    <h1>Career Interest Test</h1>
+
+    <select id="q1">
+        <option value="">Select Interest</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Medical">Medical</option>
+        <option value="Arts">Arts</option>
+    </select>
+
+    <select id="q2">
+        <option value="">Select Skill</option>
+        <option value="Technical">Technical</option>
+        <option value="Helping">Helping</option>
+        <option value="Creative">Creative</option>
+    </select>
+
+    <select id="q3">
+        <option value="">Preferred Work Style</option>
+        <option value="Office">Office Work</option>
+        <option value="Field">Field Work</option>
+        <option value="Remote">Remote Work</option>
+    </select>
+
+    <button onclick="getCareer()">Get Suggestion</button>
+
+    <div id="resultBox" class="result-box"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
